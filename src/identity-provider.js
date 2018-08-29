@@ -1,6 +1,7 @@
 'use strict'
 const isDefined = require('./is-defined')
 const Identity = require('./identity')
+const Keystore = require('orbit-db-keystore')
 
 class IdentityProvider {
   constructor (keystore) {
@@ -53,3 +54,4 @@ class IdentityProvider {
 }
 
 module.exports = IdentityProvider
+module.exports.Keystore = Keystore
